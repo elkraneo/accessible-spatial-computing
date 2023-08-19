@@ -20,7 +20,7 @@ The VoiceOver Help feature will describe the action for a given key combination 
 | Turn on VoiceOver Help  | VO-K            |
 | Turn off VoiceOver Help | Esc (Escape) |
 
-> VO represents the **VoiceOver modifier**. The VoiceOver modifier is a key or set of keys you press with one or more other keys to enter VoiceOver commands. By default, visionOS simulator uses the Control-Option.
+> VO represents the VoiceOver modifier. The VoiceOver modifier is a key or set of keys you press with one or more other keys to enter VoiceOver commands. By default, visionOS simulator uses the Control-Option.
 
 #### Simulating Gestures
 
@@ -43,6 +43,6 @@ On the simulator, equivalents are:
 | Activate   | pinch right ring finger or left index finger | VO-Space bar |
 
 ### References
-- [Using digital crown on Vision Pro Simulator - Developer Forums](https://developer.apple.com/forums/thread/732458)
-- [Interacting with your app in the visionOS simulator](https://developer.apple.com/documentation/visionos/interacting-with-your-app-in-the-visionos-simulator)
-- [Cómo utilizar VoiceOver en VisionOS (ES)](https://programaraciegas.net/?p=1102)
+- [Supporting VoiceOver in your app](https://developer.apple.com/documentation/visionos/improving-accessibility-support-in-your-app)
+- [Using digital crown on Vision Pro Simulator](https://developer.apple.com/forums/thread/732458)
+- [Cómo utilizar VoiceOver en VisionOS](https://programaraciegas.net/?p=1102)
