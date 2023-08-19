@@ -47,5 +47,6 @@ When dealing with visionOS development, [Improving accessibility support in your
 ### References
 - [Accessibility - Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/accessibility)
 - [Accessibility updates](https://developer.apple.com/documentation/updates/accessibility)
+- [Building accessible apps](https://developer.apple.com/accessibility/)
 - [Interacting with your app in the visionOS simulator](https://developer.apple.com/documentation/visionos/interacting-with-your-app-in-the-visionos-simulator)
 - [VoiceOver Command Charts](https://help.apple.com/voiceover/command-charts/)
