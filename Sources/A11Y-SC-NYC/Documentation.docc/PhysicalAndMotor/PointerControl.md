@@ -1,4 +1,4 @@
-# Competencies
+# PointerControl
 
 <!--@START_MENU_TOKEN@-->Summary<!--@END_MENU_TOKEN@-->
 
@@ -6,6 +6,6 @@
 
 <!--@START_MENU_TOKEN@-->Text<!--@END_MENU_TOKEN@-->
 
-### Essential
+### Section header
 
-- Get started with building apps for spatial computing
+<!--@START_MENU_TOKEN@-->Text<!--@END_MENU_TOKEN@-->
