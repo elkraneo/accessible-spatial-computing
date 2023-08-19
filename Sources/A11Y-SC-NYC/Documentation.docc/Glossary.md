@@ -1,10 +1,10 @@
 # Glossary
 
-<!--@START_MENU_TOKEN@-->Summary<!--@END_MENU_TOKEN@-->
+curated list of specialized terms and their explanations used in visionOS.
 
 ## Overview
 
-<!--@START_MENU_TOKEN@-->Text<!--@END_MENU_TOKEN@-->
+A glossary is crucial in technical documentation for new platforms as it provides clear definitions of platform-specific terms, aids user understanding, minimizes confusion, promotes consistent communication, and empowers users to navigate the platform independently. It enhances clarity, reduces learning barriers, and supports effective communication within diverse teams.
 
 ### Component
 
@@ -74,7 +74,7 @@
 - term Attachments: Allows to pair a tagged SwiftUI view with an entity that you can use inside a RealityView.
   - [RealityViewAttachments](https://developer.apple.com/documentation/realitykit/realityviewattachments)
 
-### Others
+### Other
 
 - term Affordance: Perceived actions that a user can take with a digital or physical object within a given environment.
   - [Affordance](https://en.wikipedia.org/wiki/Affordance)
