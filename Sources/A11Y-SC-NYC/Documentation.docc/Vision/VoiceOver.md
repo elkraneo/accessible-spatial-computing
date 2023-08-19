@@ -1,4 +1,4 @@
-# VoiceOver on visionOS simulator
+# VoiceOver
 
 ## Overview
 
