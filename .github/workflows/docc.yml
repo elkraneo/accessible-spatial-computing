@@ -12,8 +12,12 @@ permissions:
 
 jobs:
   build:
-    runs-on: macos-12
+    runs-on: macos-13
     steps:
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '15.0-beta'
+
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
@@ -25,6 +29,7 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

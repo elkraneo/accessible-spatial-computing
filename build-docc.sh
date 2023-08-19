@@ -1,6 +1,6 @@
 ##!/bin/sh
 
-xcrun xcodebuild docbuild \
+xcrun --sdk macos13 xcodebuild docbuild \
     -scheme AccessibleSpatialComputing \
     -destination 'generic/platform=iOS' \
     -derivedDataPath "$PWD/.derivedData"
