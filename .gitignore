@@ -5,3 +5,5 @@
 /*.swiftinterface
 /*.xcodeproj
 xcuserdata/
+.derivedData
+.docs
