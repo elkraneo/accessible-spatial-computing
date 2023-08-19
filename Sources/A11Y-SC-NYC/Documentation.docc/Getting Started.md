@@ -3,6 +3,8 @@
 ## Overview
 visionOS proposes an interaction paradigm that works under the umbrella of spatial computing. This results in many fresh ideas and re-elaboration of the terms we're familiar with. It's important to learn how to control the simulator well and get familiar with all the new concepts because developing will rely a lot on it.
 
+- <doc:Glossary>
+
 ### Basic simulator gestures 
 
 | **Gesture**                      | **To simulate**                    |

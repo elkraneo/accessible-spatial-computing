@@ -1,6 +1,5 @@
 # Glossary
-
-curated list of specialized terms and their explanations used in visionOS.
+Curated list of specialized terms and their explanations used in visionOS.
 
 ## Overview
 
@@ -89,7 +88,7 @@ A glossary is crucial in technical documentation for new platforms as it provide
 ](https://en.wikipedia.org/wiki/Integrated_development_environment)
 
 - term Promoted inputs: Parameters that can be set and read from Swift to change a material at runtime.
-  -[setParameter(name:value:)](https://developer.apple.com/documentation/RealityKit/ShaderGraphMaterial/setParameter(name:value:))
+  - [setParameter(name:value:)](https://developer.apple.com/documentation/RealityKit/ShaderGraphMaterial/setParameter(name:value:))
 
 - term Rendering engine: Software that turns 3D models, materials, lighting, and other environmental information from the application into 2D images or frames that are shown on the users' screen.
   - [Rendering (computer graphics))](https://en.wikipedia.org/wiki/Rendering_(computer_graphics))
