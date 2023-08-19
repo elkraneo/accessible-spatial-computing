@@ -34,6 +34,7 @@ When dealing with visionOS development, [Improving accessibility support in your
 > Digital Crown, which in the real device lowers the barrier for controlling accessibility options, is not provided in the simulator. [Xcode 15 beta 6 Release Notes](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-15-release-notes#visionOS-Simulator) mentions a workaround for emulating it that utilizes the XCTest's `XCUIDevice.rotateDigitalCrown(delta:)` method, but since XCTest can't be imported on non-test targets and [UI testing is not available to visionOS](https://developer.apple.com/documentation/xctest/user_interface_tests), it appears that there is currently no convenient way to trigger Accessibility Shortcut.
 
 
+### Featured
 
 @Links(visualStyle: detailedGrid) {
     - <doc:VoiceOver-on-visionOS>
