@@ -21,3 +21,5 @@
 - [Build spatial SharePlay experiences](https://developer.apple.com/videos/play/wwdc2023-10087) (24:31)
   Discover how you can use the GroupActivities framework to build unique sharing and collaboration experiences for visionOS. We'll introduce you to SharePlay on this platform, learn how to create experiences that make people feel present as if they were in the same space, and explore how immersive apps can respect shared context between participants.
   ![Build spatial SharePlay experiences](10087)
+
+### Transversal

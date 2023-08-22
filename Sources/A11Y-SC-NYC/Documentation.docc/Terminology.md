@@ -1,5 +1,5 @@
-# Glossary
-Curated list of specialized terms and their explanations used in visionOS.
+# Terminology
+A list of terms used in visionOS
 
 ## Overview
 
@@ -82,6 +82,9 @@ A glossary is crucial in technical documentation for new platforms as it provide
 
 - term **Digital Crown**: Hardware input for Apple Vision Pro similar to Apple Watch.
   - [Digital Crown](https://developer.apple.com/design/human-interface-guidelines/digital-crown)
+
+- term **EyeSight**: When a person wears Vision Pro, the device lets them see them and also shows them their eyes. It also provides visual clues to others about what the user is focused on.
+    - [Introducing Apple Vision Pro: Apple’s first spatial computer](https://www.apple.com/newsroom/2023/06/introducing-apple-vision-pro/)
 
 - term **IDE**: Software that consolidates coding, debugging, testing, and deployment functions in one interface.
   - [Integrated development environment
