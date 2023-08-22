@@ -26,7 +26,7 @@ Fn-VO-Up Arrow (fn⌃⌥↑) -> Notification center
 
 Fn-VO-Down Arrow (fn⌃⌥↓) -> Reality control center
 
-> Tip: **Shit-command-H** lets you go home from any place in the simulator, which is helpful when you're stuck in a flow.
+> Tip: **Shift-command-H** lets you go home from any place in the simulator, which is helpful when you're stuck in a flow.
 
 ### Accessibility
 

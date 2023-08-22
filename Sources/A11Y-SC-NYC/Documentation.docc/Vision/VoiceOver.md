@@ -18,7 +18,18 @@ The VoiceOver Help feature will describe the action for a given key combination 
 | **Action**              | **Shortcut**    |
 | ----------------------- | --------------- |
 | Turn on VoiceOver Help  | VO-K            |
-| Turn off VoiceOver Help | Esc (Escape) |
+| Turn off VoiceOver Help | Esc (Escape)    |
+
+VO-Shift-D -> Describe App Location
+VO-I -> Show Item Chooser
+VO-M -> Move to status bar
+VO-Shift-N -> Read Hint
+VO-Shift-Q -> Toggle Quick Nav
+VO-V -> Open Quick Settings
+VO-F11 -> Curtain (cuac)
+VO-F3 -> Read Item Summary
+VO-F4 -> Read System-Focused Item Summary
+
 
 > VO represents the VoiceOver modifier. The VoiceOver modifier is a key or set of keys you press with one or more other keys to enter VoiceOver commands. By default, visionOS simulator uses the Control-Option.
 
