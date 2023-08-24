@@ -1,4 +1,4 @@
-# Terminology
+# Glossary
 A list of terms used in visionOS
 
 ## Overview
@@ -87,12 +87,10 @@ A glossary is crucial in technical documentation for new platforms as it provide
     - [Introducing Apple Vision Pro: Apple’s first spatial computer](https://www.apple.com/newsroom/2023/06/introducing-apple-vision-pro/)
 
 - term **IDE**: Software that consolidates coding, debugging, testing, and deployment functions in one interface.
-  - [Integrated development environment
-](https://en.wikipedia.org/wiki/Integrated_development_environment)
+  - [Integrated development environment](https://en.wikipedia.org/wiki/Integrated_development_environment)
 
 - term **Persona**: A digital representation created using machine learning techniques, which tracks facial and hand movements in real time.
   - [Introducing Apple Vision Pro: Apple’s first spatial computer](https://www.apple.com/newsroom/2023/06/introducing-apple-vision-pro/)
-
 
 - term **Promoted inputs**: Parameters that can be set and read from Swift to change a material at runtime.
   - [setParameter(name:value:)](https://developer.apple.com/documentation/RealityKit/ShaderGraphMaterial/setParameter(name:value:))
