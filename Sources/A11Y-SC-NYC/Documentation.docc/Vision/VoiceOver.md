@@ -29,6 +29,7 @@ VO-V -> Open Quick Settings
 VO-F11 -> Curtain (cuac)
 VO-F3 -> Read Item Summary
 VO-F4 -> Read System-Focused Item Summary
+VO-Command-Right/Left Arrow -> Rotor
 
 
 > VO represents the VoiceOver modifier. The VoiceOver modifier is a key or set of keys you press with one or more other keys to enter VoiceOver commands. By default, visionOS simulator uses the Control-Option.
