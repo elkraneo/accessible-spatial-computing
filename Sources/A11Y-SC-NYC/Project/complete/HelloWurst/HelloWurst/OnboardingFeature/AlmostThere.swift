@@ -8,8 +8,8 @@ struct Notification: Identifiable {
 
 struct AlmostThere: View {
   
-  //  @AccessibilityFocusState
-  //  var focusedNotification: UUID?
+  @AccessibilityFocusState
+  private var isReadyButtonFocused: Bool
   
   @Environment(OnboardingFeatureModel.self)
   private var model
@@ -35,8 +35,6 @@ struct AlmostThere: View {
               .multilineTextAlignment(.center)
               .animation(.default, value: model.isReady)
               .accessibilityAddTraits(.updatesFrequently)
-            
-            // .accessibilityFocused($focusedNotification, equals: notifications[3].id)
           }
           
           Spacer()
@@ -49,7 +47,6 @@ struct AlmostThere: View {
                 .opacity(isFirstStepCompleted ? 1 : 0.25)
                 .animation(.easeInOut, value: progress)
                 .offset(y: isFirstStepCompleted ? -5 : 0)
-              //            .accessibilityFocused($focusedNotification, equals: notifications[0].id)
               
               let isSecondStepCompleted = progress < 0.5
               Label("Sorting out ingredients you don't eat", systemImage: "checkmark.circle.fill")
@@ -57,7 +54,6 @@ struct AlmostThere: View {
                 .opacity(isSecondStepCompleted ? 1 : 0.25)
                 .animation(.easeInOut, value: progress)
                 .offset(y: isSecondStepCompleted ? -5 : 0)
-              // .accessibilityFocused($focusedNotification, equals: notifications[1].id)
               
               let isThirdStepCompleted = progress < 0.2
               Label("Personalizing your recipes", systemImage: "checkmark.circle.fill")
@@ -65,7 +61,6 @@ struct AlmostThere: View {
                 .opacity(isThirdStepCompleted ? 1 : 0.25)
                 .animation(.easeInOut, value: progress)
                 .offset(y: isThirdStepCompleted ? -5 : 0)
-              // .accessibilityFocused($focusedNotification, equals: notifications[2].id)
             }
             .accessibilityHidden(true)
             .padding(.top)
@@ -76,7 +71,14 @@ struct AlmostThere: View {
         VStack {
           Spacer()
             .frame(width: .zero, height: 0)
-            .accessibilityLabel("Step 4 of 4")
+            .accessibilityLabel(
+              """
+              "Step 4 of 4"
+              - Finding recipes for your diet
+              - Sorting out ingredients you don't eat
+              - Personalizing your recipes
+              """
+            )
           
           Image(decorative: "wursthain")
             .resizable()
@@ -91,10 +93,10 @@ struct AlmostThere: View {
                   .foregroundColor(.accentColor)
                   .rotationEffect(Angle(degrees: 270.0))
                   .animation(.easeInOut, value: progress)
-                  .accessibilityLabel(Text("Process"))
-                  .accessibilityAddTraits(.updatesFrequently)
-                  .accessibilityValue(Text("\(progress)"))
-                  .accessibilitySortPriority(1)
+                // .accessibilityLabel(Text("Process"))
+                // .accessibilityAddTraits(.updatesFrequently)
+                // .accessibilityValue(Text("\(progress)"))
+                // .accessibilitySortPriority(1)
               }
             }
         }
@@ -107,7 +109,7 @@ struct AlmostThere: View {
         Button(
           action: { model.onboardingDidComplete() },
           label: {
-            Text("Finally".uppercased())
+            Text(model.isReady ? "Finally".uppercased() : "Processing...".uppercased())
               .bold()
               .frame(maxWidth: .infinity)
           }
@@ -116,47 +118,20 @@ struct AlmostThere: View {
         .controlSize(.large)
         .padding()
         .disabled(!model.isReady)
-        .accessibilityHint(model.isReady ? "Complete the onboarding process and find today's recipes tailored to you." : "")
+        .accessibilityAddTraits(.updatesFrequently)
+        .accessibilityValue(isReadyButtonFocused ? ". Process completed" : "Still processing.")
+        .accessibilityHint(model.isReady ? "Complete the onboarding process and browse today's recipes tailored to you." : "")
+        .accessibilityFocused($isReadyButtonFocused)
       }
     }
     .task {
-      // focusedNotification = notifications[3].id
       Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true) { timer in
         progress -= Double.random(in: 0.001...0.05)
         if progress <= 0 {
           timer.invalidate()
           model.onboardingIsReady()
+          isReadyButtonFocused = true
         }
-        
-        //        switch progress {
-        //        case -(Double.infinity)..<0:
-        //          timer.invalidate()
-        //          isReady = true
-        //          guard focusedNotification != notifications[3].id else { return }
-        //          focusedNotification = notifications[3].id
-        //          print("3")
-        
-        
-        //        case 0..<0.2:
-        //          guard focusedNotification != notifications[2].id else { return }
-        //          print("2", focusedNotification)
-        //          focusedNotification = notifications[2].id
-        //
-        //        case 0.2..<0.5:
-        //          print("_pre 1", focusedNotification)
-        //          guard focusedNotification != notifications[1].id else { break }
-        //          focusedNotification = notifications[1].id
-        //          print("post 1", focusedNotification)
-        //          print("noti 1", notifications[1].id)
-        //
-        //        case 0.5..<0.8:
-        //          guard focusedNotification != notifications[0].id else { return }
-        //          print("0", focusedNotification)
-        //          focusedNotification = notifications[0].id
-        
-        //        default:
-        //          return
-        //        }
       }
     }
   }
